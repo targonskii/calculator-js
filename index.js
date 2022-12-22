@@ -78,7 +78,7 @@ const handleOperator = (nextOperator) => {
   } else if(operator) {
     const result = calculate(firstOperand, inputValue, operator)
 
-    calculator.displayValue = `${parseFloat(result.toFixed(12))}`
+    calculator.displayValue = `${parseFloat(result.toFixed(10))}`
     calculator.firstOperand = result;
   }
   calculator.waitingForSecondOperand = true;

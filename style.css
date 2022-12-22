@@ -51,7 +51,7 @@ button:active {
 .clear {
   background-color: #4b4b4b;
   grid-area: 1/ 1 / 1 / 4;
-
+  border-left: none;
 }
 
 .clear:hover {
@@ -61,20 +61,28 @@ button:active {
 .equal  {
   height: 100%;
   background-color: #f2a438;
+  border-bottom-right-radius: 14px;
+  border-bottom: none;
 }
 
 .zero {
-  border-bottom-left-radius: 15px;
+  border-bottom-left-radius: 14px;
   grid-area: 5/ 1 / 6 / 3;
-
+  border-left: none;
+  border-bottom: none;
 }
 
 .operator {
   background-color: #f2a438;
+  border-right: none;
 }
 
-.operator:last-child {
-  border-bottom-right-radius: 15px;
+.left-button {
+  border-left: none;
+}
+
+.decimal {
+  border-bottom: none;
 }
 
 .keys {
